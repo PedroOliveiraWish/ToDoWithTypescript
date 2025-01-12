@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const logicTodo_1 = require("./todo/logicTodo");
+(0, logicTodo_1.addNewTask)("Learn React");
+(0, logicTodo_1.addNewTask)("Learn Redux");
+(0, logicTodo_1.addNewTask)("Learn Node");
+(0, logicTodo_1.displayTodos)();
+(0, logicTodo_1.updateTask)(1);
+console.log('\nafter update');
+(0, logicTodo_1.displayTodos)();
+(0, logicTodo_1.deleteTask)(2);
+console.log('\nafter delete');
+(0, logicTodo_1.displayTodos)();
